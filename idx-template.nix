@@ -11,7 +11,7 @@
     mkdir "$WS_NAME/.idx/"
     authToken=${authToken} j2 ${./devNix.j2} -o "$WS_NAME/.idx/dev.nix"
     nixfmt "$WS_NAME/.idx/dev.nix"
-    cp -r "./oem/*" "$WS_NAME/oem"
+    cp -r ${./oem/} "$WS_NAME/oem"
     chmod -R +w "$WS_NAME"
     mv "$WS_NAME" "$out"
   '';
