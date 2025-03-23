@@ -13,8 +13,10 @@
   idx = {
     extensions = [];
     workspace = {
-      onStart = {
+      onCreate = {
         start-htop = ''htop'';
+      };
+      onStart = {
         start-windows = ''
           echo -e "\033[1;33mStarting Docker...\033[0m"
           RAM=$(free -b | grep Mem | awk '{print $2}')  # Get total RAM in bytes
