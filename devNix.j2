@@ -35,7 +35,6 @@
           --cap-add NET_ADMIN \
           -v ./windows:/storage \
           -v ./oem:/oem \
-          -v ./oem:/storage2 \
           -e RAM_SIZE="$USABLE_RAM_GB""G" \
           -e CPU_CORES=$(nproc) \
           -e USERNAME="Bill" \
