@@ -43,7 +43,8 @@ if ($service) {
     # Uncomment the line below if you want to connect automatically
     # Jun 21, 2025
     Write-Host "[INFO] Connecting to Tailnet..."
-    Start-Process -FilePath "C:\Program Files\Tailscale\tailscale.exe" -ArgumentList "up", "--authkey=tskey-auth-kD2wv8ATzY11CNTRL-HBpKxRDZC5Ky6gdGRGae5K6jCw35GfUJ", "--accept-dns=false", "--reset", "--unattended", "--advertise-tags=tag:temp" -Wait
+    # Start-Process -FilePath "C:\Program Files\Tailscale\tailscale.exe" -ArgumentList "up", "--authkey=tskey-auth-kD2wv8ATzY11CNTRL-HBpKxRDZC5Ky6gdGRGae5K6jCw35GfUJ", "--accept-dns=false", "--reset", "--unattended", "--advertise-tags=tag:temp" -Wait
+    &"C:\Program Files\Tailscale\tailscale.exe" up --authkey="__AUTH__KEY__" --accept-dns=false --reset --unattended --advertise-tags=tag:temp
     Write-Host "[INFO] Connection to Tailnet complete."
 } else {
     Write-Host "[ERROR] Tailscale service is missing, make sure to install the software properly."

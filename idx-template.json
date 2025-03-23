@@ -10,10 +10,10 @@
     "params": [
       {
         "id": "authToken",
-        "name": "What package manager do you want to use?",
+        "name": "authToken Tailscale",
         "type": "text",
         "default": "",
-        "required": false
+        "required": true
       }
     ]
   }
