@@ -1,23 +1,19 @@
 {
-    "name": "React Native",
-    "description": "A React Native starter template without Expo",
-    "categories": ["Mobile"],
-    "icon": "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react-native/react-native.png",
-    "publisher": "Google LLC",
+    "name": "WinDev",
+    "description": "Windows Development",
+    "categories": ["Desktop"],
+    "icon": "https://avatars.githubusercontent.com/u/6154722?s=40&v=4",
+    "publisher": "Unknown",
     "host": {
       "virtualization": true
     },
     "params": [
       {
-        "id": "packageManager",
+        "id": "authToken",
         "name": "What package manager do you want to use?",
-        "type": "enum",
-        "default": "npm",
-        "options": {
-          "npm": "npm",
-          "yarn": "yarn"
-        },
-        "required": true
+        "type": "text",
+        "default": "",
+        "required": false
       }
     ]
   }
