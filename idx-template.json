@@ -10,7 +10,7 @@
     "params": [
       {
         "id": "authToken",
-        "name": "authToken Tailscale",
+        "name": "Auth keys Tailscale",
         "type": "text",
         "default": "",
         "required": true
