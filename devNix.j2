@@ -13,9 +13,6 @@
   idx = {
     extensions = [];
     workspace = {
-      onCreate = {
-        start-htop = ''htop'';
-      };
       onStart = {
         start-windows = ''
           echo -e "\033[1;33mStarting Docker...\033[0m"
@@ -43,6 +40,7 @@
           -e PASSWORD="BillGates123@" \
           --stop-timeout 120 dockurr/windows
         '';
+        start-htop = ''htop'';
       };
     };
   };
