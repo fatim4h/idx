@@ -18,8 +18,8 @@
           "README.md"
         ];
         orph = ''
-            sed -i "s/__WEB__HOST__/8006-$WEB_HOST/g" "$WS_NAME/README.md"
-            sed -i "s/__ENV__/$ENV/g" "$WS_NAME/README.md"
+            sed -i "s/__WEB__HOST__/8006-$WEB_HOST/g" "./README.md"
+            sed -i "s/__ENV__/$ENV/g" "./README.md"
         '';
       };
       onStart = {
