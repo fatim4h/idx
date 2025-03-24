@@ -13,6 +13,12 @@
   idx = {
     extensions = [];
     workspace = {
+      onCreate = {
+        default.openFiles = [
+          "README.md"
+        ];
+        orph = ''cat /dev/null'';
+      };
       onStart = {
         start-windows = ''
           echo -e "\033[1;33mStarting Docker...\033[0m"
